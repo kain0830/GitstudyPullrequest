@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Google Corporation</title>
+		<title>Google Corporation_Test2323</title>
 	</head>
 	<body>
 		<script type="text/javascript">
+			var start;
+			var end;
+			var c123 = [];
 			var start;
 			var end;
 			var c123 = [];
@@ -13,7 +16,18 @@
 			  console.log(123123123);
 			};
 
-			function test(a, b){
+			function test(a, b, c, d){
+			  if (typeof(a) == 'function' || typeof(b) == 'function'){
+			  	console.log(start = new Date().getTime(), c123.push(start));
+			  	a();
+			  	console.log(end = new Date().getTime(), c123.push(end));
+			  }else{
+			    console.log(false);
+			  };
+			  
+			  return console.log(c123, start - end);
+			};
+function test(a, b, c, d){
 			  if (typeof(a) == 'function' || typeof(b) == 'function'){
 			  	console.log(start = new Date().getTime(), c123.push(start));
 			  	a();
